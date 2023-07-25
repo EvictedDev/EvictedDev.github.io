@@ -36,6 +36,7 @@ body {
   font-weight: 400;
   color: #fff;
   background: #151418;
+  overflow-x: hidden;
 }
 
 body.no-scroll {
