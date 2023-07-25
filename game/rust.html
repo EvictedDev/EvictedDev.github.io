@@ -81,7 +81,7 @@
                     Каталог
                 </a>
                 <i class="fa-light fa-angle-right"></i>
-                <a href="rus%d1%82.html" class="active">Rusт</a>
+                <a href="rust.html" class="active">Rusт</a>
             </div>
             <div class="pre-info fl ai-c jc-sb">
                 <p class="title popular">
@@ -90,7 +90,7 @@
             </div>
             <div class="products fl fw-w">
                                 <div class="product-wrapper" data-popular="popular">
-                    <a href="../product/rus%d1%82/winh%d0%b0%d1%81k.html" class="product">
+                    <a href="../product/rust/winh%d0%b0%d1%81k.html" class="product">
                         <span class="name">
                             <span>
                                                                 <i class="fa-solid fa-fire"></i>
@@ -118,7 +118,7 @@
                     </a>
                 </div>
                                 <div class="product-wrapper" data-popular="popular">
-                    <a href="../product/rus%d1%82/evi%d1%81t%d0%b5ds%d1%81ripts.html" class="product">
+                    <a href="../product/rust/evi%d1%81t%d0%b5ds%d1%81ripts.html" class="product">
                         <span class="name">
                             <span>
                                                                 <i class="fa-solid fa-fire"></i>
@@ -146,7 +146,7 @@
                     </a>
                 </div>
                                 <div class="product-wrapper" data-popular="popular">
-                    <a href="../product/rus%d1%82/spoofer.html" class="product">
+                    <a href="../product/rust/spoofer.html" class="product">
                         <span class="name">
                             <span>
                                                                 <i class="fa-solid fa-fire"></i>
@@ -230,13 +230,13 @@
     <script src="../js/translate.js"></script>
     <script src="../js/main.html"></script>
     <script>const pricing = document.getElementsByClassName('price');
-        for (let i = 0; i < pricing.length; i++) {
-            const priceValue = pricing[i].getAttribute('data-price-dollar');
-            console.log(pricing[i].innerHTML);
-            const newPrice = (priceValue - priceValue * 0.25 )
-            pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$"
-            pricing[i].setAttribute('data-price-dollar',newPrice)
-            };</script>
+            for (let i = 0; i < pricing.length; i++) {
+                const priceValue = pricing[i].getAttribute('data-price-dollar');
+                console.log(pricing[i].innerHTML);
+                const newPrice = (priceValue - priceValue * 0.10 )
+                pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$"
+                pricing[i].setAttribute('data-price-dollar',newPrice)
+                };</script>
 </body>
 
 

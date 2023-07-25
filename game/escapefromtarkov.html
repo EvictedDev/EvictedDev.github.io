@@ -258,13 +258,13 @@
     <script src="../js/translate.js"></script>
     <script src="../js/main.html"></script>
     <script>const pricing = document.getElementsByClassName('price');
-        for (let i = 0; i < pricing.length; i++) {
-            const priceValue = pricing[i].getAttribute('data-price-dollar');
-            console.log(pricing[i].innerHTML);
-            const newPrice = (priceValue - priceValue * 0.25 )
-            pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$"
-            pricing[i].setAttribute('data-price-dollar',newPrice)
-            };</script>
+            for (let i = 0; i < pricing.length; i++) {
+                const priceValue = pricing[i].getAttribute('data-price-dollar');
+                console.log(pricing[i].innerHTML);
+                const newPrice = (priceValue - priceValue * 0.10 )
+                pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$"
+                pricing[i].setAttribute('data-price-dollar',newPrice)
+                };</script>
 </body>
 
 
