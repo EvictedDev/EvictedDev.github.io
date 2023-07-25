@@ -46,7 +46,7 @@ for (let i = 0; i < sellbtn.length; i++) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name: namestring, price: priceValue }),
+      body: JSON.stringify({ name: namestring, price: Math.floor(priceValue) }),
     })
       .then((res) => {
         if (res.ok) return res.json();
