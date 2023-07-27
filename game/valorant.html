@@ -256,14 +256,23 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.cookie.js"></script>
     <script src="../js/translate.js"></script>
-    <script>const pricing = document.getElementsByClassName('price');
-            for (let i = 0; i < pricing.length; i++) {
-                const priceValue = pricing[i].getAttribute('data-price-dollar');
-                console.log(pricing[i].innerHTML);
-                const newPrice = (priceValue - priceValue * 0.10 )
-                pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$"
-                pricing[i].setAttribute('data-price-dollar',newPrice)
-                };</script>
+    <script>
+  const pricing = document.getElementsByClassName('price');
+  for (let i = 0; i < pricing.length; i++) {
+    const priceValue = parseFloat(pricing[i].getAttribute('data-price-dollar'));
+
+    if (priceValue > 50) {
+      const newPrice = priceValue - priceValue * 0.20;
+      pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$";
+      pricing[i].setAttribute('data-price-dollar', newPrice);
+    } else {
+      const newPrice = priceValue - priceValue * 0.10;
+      pricing[i].innerHTML = `<span style="text-decoration: line-through;margin-right: 1vw;">${priceValue}$</span>` + newPrice + "$";
+      pricing[i].setAttribute('data-price-dollar', newPrice);
+    }
+  }
+</script>
+
 </body>
 
 
